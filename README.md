@@ -80,20 +80,6 @@ hackathon-fed-x/
 
 ```
 
-## Modules Scaffolding
-this package uses **gulp-dogen** for scaffolding.
-There are 2 templates in **config/templates**:
-1. ngmodule
-2. ngservice
-
-to scaffold, run in terminal:
-```shell
-# to scaffold new ng component in src/components
-npm run dogen -- --ngmodule the-name-of-module
-# to scaffold new ng service in src/core/services
-npm run dogen -- --ngservice the-name-of-service
-```
-
 ## Adding 3rd party / vendors
 the build creates 2 bundled files:
 1. app.bundle.js - includes the files created by you
@@ -112,4 +98,4 @@ to create a build, simply run:
 ```npm run prod```
 This creates a **dist** directory with a minified and bundled version of the app.
 
-You can run a local server to check the dist build by ```npm run prod:serve```. It is based on lite-server and can be extended through **config/prod-config.json** by the [various options available to it](https://github.com/johnpapa/lite-server).
+You can run a local server to check the dist build by ```npm run prod:serve```.
