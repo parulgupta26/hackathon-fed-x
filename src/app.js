@@ -9,6 +9,7 @@ import AngularSanitize from 'angular-sanitize';
 import AngularBootstrap from 'angular-ui-bootstrap';
 /*eslint-disable */
 import LocalStorageModule from 'angular-local-storage';
+import slickCarousel from 'angular-slick-carousel';
 /*eslint-enable */
 import { AppComponent } from './app.component';
 
@@ -24,6 +25,7 @@ angular.module(appName, [
   AngularAnimate,
   AngularSanitize,
   AngularBootstrap,
+  'slickCarousel',
 
   // services
   'LocalStorageModule',
