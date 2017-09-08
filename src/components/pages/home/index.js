@@ -21,9 +21,9 @@ export default angular.module('home', [
 
 /* @ngInject */
 function config ($stateProvider) {
-  // $stateProvider
-  //     .state('home', {
-  //         url: '/home',
-  //         template: '<other></other>'
-  //     });
+  $stateProvider
+    .state('/', {
+      url: '/home',
+      template: '<home></home>'
+    });
 }
