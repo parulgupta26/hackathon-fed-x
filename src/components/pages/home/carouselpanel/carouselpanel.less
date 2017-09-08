@@ -32,19 +32,48 @@
             width: 360px;
             height: 370px;
             border-radius: 5px;
-            background-color: #ffffff;
+            background-color: @white;
             margin: 10px;
-            padding: 10px;
+            padding: 40px;
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid @font-dark-gray;
+
+            .icon-wrapper {
+                height: 100px;
+                width: 100px;
+                padding: 4px;
+                border: 1px solid @divider-light-gray;
+                border-radius: 100%;
+                margin: 0 auto;
+
+                .icon-container {
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 100%;
+                    background-color: @florocent-green;
+                    border: 1px solid @divider-light-gray;
+                    padding-top: 25px;
+
+                    img {
+                        height: 39.1px;
+                        width: 42px;
+                    }
+                }
+            }
+
+            
         }
 
         .tile-icon {
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 48.7px;
             display: block;
         }
 
         .tile-heading {
             font-family: Montserrat;
+            margin-bottom: 27.5px;
             font-size: 24px;
             letter-spacing: 3px;
             text-align: left;

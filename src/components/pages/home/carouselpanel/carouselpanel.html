@@ -4,7 +4,12 @@
     <div>
         <slick infinite=true slides-to-show=3 slides-to-scroll=5 class="slick-container">
             <div class="slick-item" ng-repeat="tile in $ctrl.tiles">
-                <img src="{{tile.icon}}" class="tile-icon"></img>
+                <div class="icon-wrapper">
+                        <div class="icon-container">
+                                <img src="{{tile.icon}}" class="tile-icon"></img>
+                        </div>
+                </div>
+                
                 <h1 class="tile-heading">{{tile.heading}}</h1>
                 <p class="tile-desc">{{tile.description}}</p>
             </div>
