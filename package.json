@@ -1,7 +1,7 @@
 {
   "name": "hackathon-fed-x",
   "version": "0.0.3",
-  "description": "starter kit for angular > 1.5.x, > es6, karma and jasmine",
+  "description": "Team FED-X repo for JSFoo Hackathon",
   "main": "src/index.html",
   "directories": {},
   "scripts": {
@@ -15,7 +15,6 @@
     "bdd": "BDD=true npm test",
     "start": "npm run dev",
     "wpw": "webpack -d --watch",
-    "dogen": "gulp dogen",
     "dev": "webpack-dev-server --hot --inline --progress --colors --content-base src --port 9001",
     "prod": "npm run clean:dist && webpack --config=webpack.config.production.js -p",
     "prod:serve": "lite-server -c config/prod-config.json"
