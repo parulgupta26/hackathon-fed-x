@@ -1,1 +1,18 @@
-judgepanel
+<p class="title">
+    Panel of Judges
+</p>
+<p class="sub-title">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque labore alias officiis nam fugiat?
+    Debitis iure repudiandae soluta culpa! Dignissimos quam commodi exercitationem ab illum facere culpa laudantium necessitatibus voluptatem.
+</p>
+<div class="profile-list">
+    <profile ng-repeat="profile in $ctrl.profiles" profile-name="{{profile.name}}" profile-title="{{profile.title}}" profile-pic="{{profile.path}}"></profile>
+    {{$ctrl.temp}}
+</div>
+<div class="info">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repellendus, consectetur expedita nam aspernatur libero ad adipisci impedit iste,
+    quo harum atque quae beatae quasi suscipit debitis a natus, eius.
+</div>
+<button class="btn">
+    click here
+</button>
