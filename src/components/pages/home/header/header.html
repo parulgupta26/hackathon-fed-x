@@ -3,10 +3,10 @@
 </div>
 <nav>
     <ul>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>ELEMENTS</li>
-        <li>FAQ</li>
+        <li ng-click="$ctrl.navigate('home')">HOME</li>
+        <li ng-click="$ctrl.navigate('aboutus')">ABOUT US</li>
+        <li ng-click="$ctrl.navigate('elements')">ELEMENTS</li>
+        <li ng-click="$ctrl.navigate('faq')">FAQ</li>
     </ul>
     <button class="btn-inverse">Sign Up</button>
 </nav>

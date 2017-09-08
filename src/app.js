@@ -50,9 +50,17 @@ function config ($stateProvider, $urlRouterProvider, localStorageServiceProvider
       url: '/',
       component: 'home'
     })
-    .state('edit', {
-      url: '/edit',
-      component: 'edit'
+    .state('aboutus', {
+      url: '/aboutus',
+      template: '<header-component></header-component>' + '<h1>About us</h1>'
+    })
+    .state('elements', {
+      url: '/elements',
+      template: '<header-component></header-component>' + '<h1>Hello Element</h1>'
+    })
+    .state('faq', {
+      url: '/faq',
+      template: '<header-component></header-component>' +  '<h1>FAQ</h1>'
     });
 
   $urlRouterProvider.otherwise('/');
