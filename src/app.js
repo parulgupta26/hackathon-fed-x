@@ -10,12 +10,13 @@ import AngularBootstrap from 'angular-ui-bootstrap';
 /*eslint-disable */
 import LocalStorageModule from 'angular-local-storage';
 /*eslint-enable */
-import AppCore from './core';
 import { AppComponent } from './app.component';
 
-import Home from './components/home';
+import Home from './components/pages/home';
+import Edit from './components/pages/edit';
+import SharedComponents from './components/shared';
 
-const appName = 'myApp';
+const appName = 'fedx';
 
 angular.module(appName, [
   // framework wide components
@@ -26,10 +27,13 @@ angular.module(appName, [
 
   // services
   'LocalStorageModule',
-  AppCore,
 
-  // ui-components
-  Home
+  // shared components
+  SharedComponents,
+
+  // ui-page-components
+  Home,
+  Edit
 ])
 .config(config)
 .component(AppComponent.selector, AppComponent);
@@ -43,6 +47,10 @@ function config ($stateProvider, $urlRouterProvider, localStorageServiceProvider
     .state('home', {
       url: '/',
       component: 'home'
+    })
+    .state('edit', {
+      url: '/edit',
+      component: 'edit'
     });
 
   $urlRouterProvider.otherwise('/');
