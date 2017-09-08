@@ -1,0 +1,82 @@
+@primary-color: #2effb5;
+@secondary-color: #5d5c5e;
+@white: #fff;
+
+header-component{
+    display: block;
+    width: 100%;
+    height: 425px;
+    background-color: @secondary-color;
+    padding: 45px 45px 0px;
+    .home-icon{
+        display: inline-block;
+    }
+    nav{
+        display: inline-block;
+        float: right;
+        ul{
+            list-style: none;
+            margin: 12px 0px 0px;
+            padding: 0px;
+            float: left;
+            li{                
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                text-align: left;
+                color: #ffffff;
+                float: left;
+                margin-right:60px;
+                padding-bottom: 5px;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 5px solid @primary-color;
+                }
+            }
+        }
+    }
+    .banner{
+        display: block;
+        padding-top: 100px;
+        text-align: center;
+        color: @white;
+        .heading{
+            font-family: ExodusDemo-Stencil;
+            font-size: 36px;
+            letter-spacing: 4.5px;
+            text-transform: uppercase;
+        }
+        .sub-heading{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+            margin-bottom: 20px;
+        }
+    }
+    .btn{
+        height: 45px;
+        border-radius: 100px;
+        border: solid 1px @primary-color;
+        background: @primary-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+    }
+    .btn-inverse{
+        width: 133.1px;
+        height: 45px;
+        border-radius: 100px;
+        border: solid 1px @primary-color;
+        background: transparent;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: @primary-color;
+    }
+}

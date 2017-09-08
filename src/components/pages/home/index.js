@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import { HomeComponent } from './home.component';
+import { HeaderComponent} from './header/header.component';
 import { JudgePanelComponent } from './judgepanel/judgepanel.component';
 import { FooterPanelComponent } from './footerpanel/footerpanel.component';
 
@@ -11,6 +12,7 @@ export default angular.module('home', [
 ])
   .config(config)
   .component(HomeComponent.selector, HomeComponent)
+  .component(HeaderComponent.selector, HeaderComponent)
   .component(JudgePanelComponent.selector, JudgePanelComponent)
   .component(FooterPanelComponent.selector, FooterPanelComponent)
 .name;
