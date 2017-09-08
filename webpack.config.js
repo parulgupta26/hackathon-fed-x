@@ -18,7 +18,8 @@ module.exports = {
       'angular-animate',
       'angular-sanitize',
       'angular-ui-bootstrap',
-      'angular-local-storage'
+      'angular-local-storage',
+      'angular-slick-carousel'
     ]
   },
   output: {
